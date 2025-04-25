@@ -2,82 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KFZFantasyValorant - Login</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .login-container {
-      background: #1e1e1e;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-    input {
-      display: block;
-      margin-bottom: 1rem;
-      width: 100%;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 0.5rem;
-    }
-    button {
-      background: #00bfff;
-      color: white;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      border-radius: 0.5rem;
-      cursor: pointer;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KFZ Fantasy Valorant - Login</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="icon" type="image/png" href="img/KFZValorantFantasy.png" />
 </head>
 <body>
+  <!-- Site Icon Top Left -->
+  <img src="img/KFZValorantFantasy.png" alt="Site Icon" class="site-icon" />
 
+  <!-- Login Container -->
   <div class="login-container">
-    <h1>KFZFantasyValorant</h1>
-    <input type="text" id="username" placeholder="Enter your username" />
-    <input type="password" id="password" placeholder="Enter your password" />
-    <button onclick="login()">Login</button>
-    <p id="login-status"></p>
+    <h2>KFZ Fantasy Valorant</h2>
+    <form action="dashboard.html" method="POST">
+      <input type="text" name="username" placeholder="Username" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <a href="create-account.html">
+      <button class="create-account-btn">Create Account</button>
+    </a>
   </div>
 
-  <script>
-    const users = {
-      admin: "kfzpassword123", // Replace with real credentials or expand later
-      player1: "kfz123",
-      player2: "valorantFan"
-    };
-
-    function login() {
-      const username = document.getElementById("username").value;
-      const password = document.getElementById("password").value;
-      const status = document.getElementById("login-status");
-
-      if (users[username] && users[username] === password) {
-        status.textContent = `Welcome, ${username}!`;
-        status.style.color = "lightgreen";
-        // Redirect or load dashboard
-        setTimeout(() => {
-          window.location.href = "dashboard.html"; // Create this later
-        }, 1000);
-      } else {
-        status.textContent = "Invalid credentials.";
-        status.style.color = "red";
-      }
-    }
-  </script>
-
+  <!-- Sponsor Section Bottom Right -->
+  <div class="sponsor">
+    <a href="https://www.twitch.tv/teehler_" target="_blank">
+      <img src="img/teehler-icon.png" alt="Teehler Icon" />
+      Sponsored by ➡️  <strong> teehler_</strong>
+    </a>
+  </div>
 </body>
 </html>
