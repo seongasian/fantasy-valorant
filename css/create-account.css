@@ -2,80 +2,110 @@
 /* Styling for the Create Account Page */
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
-  }
-  
-  .login-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 2rem;
-    background-color: #2e2e2e;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    text-align: center;
-  }
-  
-  .login-container h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  button {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Styling for the login link */
-  p {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-  
-  p a {
-    color: #FFA500;
-    text-decoration: none;
-  }
-  
-  p a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sponsor Section Style (for bottom-left corner) */
-  .sponsor {
-    font-size: 0.9rem;
-    color: white;
-  }
-  
-  .sponsor a {
-    text-decoration: none;
-  }
-  
-  /* Styling for the website icon */
-  img[alt="Website Icon"] {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Login Link */
+p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+p a {
+  color: #FFA500;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Sponsor Section */
+.sponsor {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-align: center;
+  background-color: #2e2e2e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 100px;
+  transition: transform 0.2s ease;
+}
+
+.sponsor:hover {
+  transform: scale(1.05);
+}
+
+.sponsor img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.5rem auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.sponsor a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  display: block;
+}
+
+/* Website Icon */
+img[alt="Website Icon"] {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}

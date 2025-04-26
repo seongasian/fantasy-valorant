@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KFZFantasyValorant - Dashboard</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/dashboard.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
+  <div class="top-bar">
+    <h1>Welcome to Your Dashboard</h1>
+    <input type="text" id="searchBar" placeholder="Search leagues...">
+  </div>
 
-  <header class="top-bar">
-    <h1>Welcome to KFZFantasyValorant</h1>
-    <input type="text" id="searchBar" placeholder="Search for a league..." onkeyup="filterLeagues()" />
-  </header>
+  <div class="league-container">
+    <a href="league1.html" class="league-card" data-league="League-1">League 1</a>
+    <a href="v-league.html" class="league-card" data-league="v-league">V-League</a>
+  </div>
 
-  <main class="league-container" id="leagueList">
-    <!-- League Cards -->
-    <a href="page/League-1.html" class="league-card">League-1</a>
-    <a href="page/V-League.html" class="league-card">V-League</a>
-  </main>
-
-  <script>
-    function filterLeagues() {
-      const query = document.getElementById("searchBar").value.toLowerCase();
-      const cards = document.querySelectorAll(".league-card");
-
-      cards.forEach(card => {
-        const leagueName = card.textContent.toLowerCase();
-        card.style.display = leagueName.includes(query) ? "block" : "none";
-      });
-    }
-  </script>
-
+  <script src="js/script.js"></script>
 </body>
 </html>

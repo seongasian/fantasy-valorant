@@ -2,101 +2,107 @@
 /* Global Styles (used by main.html - Login Page) */
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: white;
-  }
-  
-  /* Site Icon Top-Left */
-  .site-icon {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    z-index: 1000;
-  }
-  
-  /* Login Container */
-  .login-container {
-    width: 100%;
-    max-width: 400px;
-    margin: 100px auto;
-    padding: 2rem;
-    background-color: #2e2e2e;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    text-align: center;
-  }
-  
-  .login-container h2 {
-    margin-bottom: 1.5rem;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  button {
-    width: 100%;
-    padding: 0.75rem;
-    margin: 0.5rem 0;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  /* Create Account Button Style */
-  .create-account-btn {
-    background-color: #ffa500;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 1rem;
-  }
-  
-  .create-account-btn:hover {
-    background-color: #e59400;
-  }
-  
-  /* Sponsor Section (bottom right corner) */
-  .sponsor {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    background-color: #2e2e2e;
-    padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s ease;
-  }
-  
-  .sponsor:hover {
-    transform: scale(1.05);
-  }
-  
-  .sponsor img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 5px;
-    border-radius: 50%;
-    border: 2px solid white;
-  }
-  
-  .sponsor a {
-    text-decoration: none;
-    color: white;
-    font-size: 0.95rem;
-    display: flex;
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+/* Site Icon Top-Left */
+.site-icon {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  z-index: 1000;
+}
+
+/* Login Container */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 2rem;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.login-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Create Account Button Style */
+.create-account-btn {
+  background-color: #ffa500;
+  margin-top: 1rem;
+}
+
+.create-account-btn:hover {
+  background-color: #e59400;
+}
+
+/* Sponsor Section */
+.sponsor {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  background-color: #2e2e2e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  width: 100px;
+  transition: transform 0.2s ease;
+}
+
+.sponsor:hover {
+  transform: scale(1.05);
+}
+
+.sponsor img {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 0.5rem auto;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.sponsor a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  display: block;
+}

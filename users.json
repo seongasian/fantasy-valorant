@@ -1,0 +1,19 @@
+[
+    {
+      "username": "Admin",
+      "password": "kfzpassword123",
+      "leagues": ["ALL"]
+    },
+    {
+      "username": "john",
+      "password": "john123",
+      "leagues": ["League-1"]
+    },
+    {
+      "username": "amy",
+      "password": "amy456",
+      "leagues": ["v-league"]
+    }
+  ]
+  
+  
